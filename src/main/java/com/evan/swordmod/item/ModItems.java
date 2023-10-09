@@ -59,6 +59,10 @@ public class ModItems {
             () -> new EarthFallItem(Tiers.DIAMOND,1,7.0f,
                     new Item.Properties().tab(ModCreativeModeTab.TEST_TAB).stacksTo(1)));
 
+    public static final RegistryObject<Item> WINTER_TEARS = ITEMS.register("winter_tears",
+            () -> new WinterTearsItem(Tiers.DIAMOND,1,9.0f,
+                    new Item.Properties().tab(ModCreativeModeTab.TEST_TAB).stacksTo(1)));
+
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
